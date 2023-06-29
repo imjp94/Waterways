@@ -286,6 +286,23 @@ func _get_property_list() -> Array:
 			hint_string = "0.0, 1.0",
 			usage = PROPERTY_USAGE_DEFAULT | PROPERTY_USAGE_SCRIPT_VARIABLE
 		},
+		{
+			name = "flow_foam_noise",
+			type = TYPE_OBJECT,
+			usage = PROPERTY_USAGE_DEFAULT
+		},
+		{
+			name = "dist_pressure",
+			type = TYPE_OBJECT,
+			usage = PROPERTY_USAGE_DEFAULT
+		},
+		{
+			name = "_material",
+			type = TYPE_OBJECT,
+			hint = PROPERTY_HINT_RESOURCE_TYPE,
+			hint_string = "ShaderMaterial",
+			usage = PROPERTY_USAGE_DEFAULT
+		},
 		# Serialize these values without exposing it in the inspector
 		{
 			name = "curve",
@@ -300,23 +317,6 @@ func _get_property_list() -> Array:
 		{
 			name = "valid_flowmap",
 			type = TYPE_BOOL,
-			usage = PROPERTY_USAGE_STORAGE
-		},
-		{
-			name = "flow_foam_noise",
-			type = TYPE_OBJECT,
-			usage = PROPERTY_USAGE_STORAGE
-		},
-		{
-			name = "dist_pressure",
-			type = TYPE_OBJECT,
-			usage = PROPERTY_USAGE_STORAGE
-		},
-		{
-			name = "_material",
-			type = TYPE_OBJECT,
-			hint = PROPERTY_HINT_RESOURCE_TYPE,
-			hint_string = "ShaderMaterial",
 			usage = PROPERTY_USAGE_STORAGE
 		},
 		{

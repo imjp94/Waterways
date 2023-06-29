@@ -1,7 +1,7 @@
 // Copyright © 2021 Kasper Arnklit Frandsen - MIT License
 // See `LICENSE.md` included in the source distribution for details.
 shader_type spatial;
-render_mode depth_draw_always, specular_schlick_ggx, cull_disabled;
+render_mode depth_draw_always, specular_schlick_ggx, cull_disabled, ambient_light_disabled;
 
 // If you are making your own shader, you can customize or add your own
 // parameters below and they will automatically get parsed and displayed in
